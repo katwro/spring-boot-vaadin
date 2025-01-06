@@ -118,6 +118,7 @@ public class UgaServiceImpl implements UgaService {
         if (user.getPassword() != null && !user.getPassword().equals(originalPassword)) {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
         }
+        user.setPhone(user.getPhone().replaceAll("\\D", ""));
 
         userRepo.save(user);
     }

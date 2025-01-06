@@ -6,7 +6,7 @@ public class AppConstants {
 
     }
 
-    public static final String PHONE_REGEXP = "^\\+?\\d+";
+    public static final String PHONE_REGEXP = "(?:\\D*\\d\\D*){3,}";
 
     public static final String EMAIL_REGEXP = "^([\\w\\-\\._]+)@(\\w+)\\.(\\w+)";
 

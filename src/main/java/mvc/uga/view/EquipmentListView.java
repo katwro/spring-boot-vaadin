@@ -80,7 +80,7 @@ public class EquipmentListView extends VerticalLayout
     private Component createEquipmentGrid() {
         equipmentGrid.setColumns("id", "name", "serialNumber", "inventoryNumber");
         equipmentGrid.addColumn(this::getUsername).setHeader("Username");
-        equipmentGrid.addColumn(createAssignUserColumn()).setHeader("User");
+        equipmentGrid.addColumn(createAssignUserColumn()).setHeader("Assign User");
 
         equipmentGrid.addThemeVariants(GridVariant.LUMO_ROW_STRIPES);
         equipmentGrid.addThemeVariants(GridVariant.LUMO_COLUMN_BORDERS);
